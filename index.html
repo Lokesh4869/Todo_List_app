@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>ToDo List</title>
+
+</head>
+<body>
+  <div class="header">
+      <div class="login-container">
+        <button>Login</button>
+        <button>Sign-up</button>
+      </div>
+  </div>  
+<div class="container">
+    <div class="app">
+       <div class="todo-list" id="todo">    
+           <!-- appending the list using js -->
+<!--            
+            <div class="task">
+               <h3>NEW CONTENT</h3>
+               <p>DESCRIPTION OF THE NEW CONTENT</p>
+               <p>Date : 2023-09-02</p>
+             </div>
+            -->
+         </div> <!-- toto list end -->
+    </div> <!-- end of the app -->
+ </div>  <!-- end of the container -->
+ <div class="bottom-header">
+    <div class="add-button" id="openDialog">
+        <span class="material-symbols-outlined" title="Add Task">
+            add
+            </span></div>
+ </div> <!-- end of the bottom-header -->
+ <div id="taskDialog" class="dialog">
+    <div id="dialog-content">
+        <span class="close" id="closeDialog">&times;</span>
+        <h2>Add Task</h2>
+       <div class="command">
+        <label for="taskTitle">Title:</label>
+        <input type="text" id="taskTitle">
+        <label for="taskDescription">Description:</label>
+        <textarea id="taskDescription"></textarea>
+        <label for="taskDate">Date:</label>
+        <input type="date" id="taskDate">
+        <button id="saveTask">Add</button>
+       </div>
+    </div>
+    
+ </div> <!-- end of the dialog div -->
+ <script src="main.js"></script>
+</body>
+</html>
